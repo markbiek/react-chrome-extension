@@ -6,27 +6,13 @@ value "popup.html".
 -->
 <html>
     <head>
-        <title>Getting Started Extension's Popup</title>
-        <style>
-            body {
-                font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
-                font-size: 100%;
-                width: 640px;
-                height: 480px;
-            }
-        </style>
-
-        <!--
-        - JavaScript and HTML must be in separate files: see our Content Security
-        - Policy documentation[1] for details and explanation.
-        -
-        - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
-        -->
+        <title>React Chrome Extension</title>
+        <link rel="stylesheet" href="./build/main.css" type="text/css" />
     </head>
     <body>
         <div id="app"></div>
 
-        <script src="./build/js/bundle.js"></script>
+        <script src="./build/bundle.js"></script>
     </body>
 </html>
 
