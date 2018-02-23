@@ -8,9 +8,8 @@ The extension has a simple popup which displays the current Chrome user's email 
 1. `git clone https://github.com/markbiek/react-chrome-extension.git`
 
 ### Build the project
-1. `npm install`
-2. `composer install`
-3. `gulp`
+1. `yarn install`
+2. `yarn run build`
 
 ### Install the extension
 1. Open Chrome and go to `chrome://extensions`
