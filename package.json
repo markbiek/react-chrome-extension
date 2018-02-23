@@ -1,33 +1,37 @@
 {
   "private": true,
   "scripts": {
-    "prod": "gulp --production",
-    "dev": "gulp watch"
-  },
-  "devDependencies": {
-    "autoprefixer-loader": "^3.2.0",
-    "bootstrap-less": "^3.3.7",
-    "css-loader": "^0.23.1",
-    "gulp": "^3.9.1",
-    "immutable": "^3.8.1",
-    "jquery": "^3.1.0",
-    "less": "^2.7.1",
-    "less-loader": "^2.2.3",
-    "lodash": "^4.14.0",
-    "style-loader": "^0.13.1"
+    "build": "webpack",
+    "watch": "webpack --progress --watch",
+    "clean": "rm main.css*; rm bundle.js",
+    "dev": "yarn run build"
   },
   "dependencies": {
-    "axios": "^0.13.1",
-    "babel-core": "^6.13.2",
-    "babel-loader": "^6.2.4",
-    "babel-preset-es2015": "^6.13.2",
-    "babel-preset-react": "^6.11.1",
-    "gulp-watch": "^4.3.10",
-    "react": "^15.3.0",
-    "react-dom": "^15.3.0",
-    "react-redux": "^4.4.5",
-    "redux": "^3.5.2",
-    "webpack": "^1.13.1",
-    "webpack-stream": "^3.2.0"
+    "autoprefixer": "^8.0.0",
+    "axios": "^0.18.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "classnames": "^2.2.5",
+    "css-loader": "^0.28.10",
+    "del": "^3.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "immutable": "^3.8.2",
+    "moment": "^2.20.1",
+    "node-sass": "^4.7.2",
+    "promise-polyfill": "^7.1.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "run-sequence": "^2.2.1",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.11.0",
+    "whatwg-fetch": "^2.0.3"
   }
 }

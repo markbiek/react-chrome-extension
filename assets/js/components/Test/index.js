@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { connect } from 'react-redux';
 import Immutable from 'immutable';
-import store from '../store.js';
+import store from '../../store';
 
 class TestComponent extends React.Component {
     componentWillMount () {
